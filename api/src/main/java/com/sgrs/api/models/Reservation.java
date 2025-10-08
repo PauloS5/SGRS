@@ -1,8 +1,9 @@
 package com.sgrs.api.models;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public class Reservation {
+public class Reservation implements Serializable {
     private Long id;
     private LocalDateTime dateTimeStart;
     private LocalDateTime dateTimeEnd;
