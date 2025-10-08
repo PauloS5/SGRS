@@ -24,11 +24,9 @@ public class Reservation implements Serializable {
     private LocalDateTime dateTimeEnd;
 
     @ManyToOne
-    @Column(nullable = false)
     private User user;
     
     @ManyToOne
-    @Column(nullable = false)
     private Room room;
 
     public Long getId() {
