@@ -3,7 +3,8 @@ package com.sgrs.api.models;
 public class User {
     private Long id;
     private String name;
-    private String email;
+    private int capacity;
+    private String localization;
     
     public Long getId() {
         return this.id;
@@ -11,8 +12,11 @@ public class User {
     public String getName() {
         return this.name;
     }
-    public String getEmail() {
-        return this.email;
+    public int getCapacity() {
+        return this.capacity;
+    }
+    public String getLocalization() {
+        return this.localization;
     }
 
     public void setId(Long id) {
@@ -21,7 +25,10 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+    public void setLocalization(String localization) {
+        this.localization = localization;
     }
 }
